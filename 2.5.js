@@ -1,4 +1,4 @@
-var favnumber = prompt("What is your favourite number");
+let favnumber = prompt("What is your favourite number");
 
 while (favnumber !== "42") { favnumber = prompt("Are you sure ?"); }
 
