@@ -11,7 +11,9 @@ function multiRand(n) {
   }
   return mrand;
 }
-
 // this function generate n random numbers (n is randomized withing the first func)
 
-console.log(multiRand(n));
+n = prompt("Enter a number of random numbers to generate");
+alert("There are your random numbers : " + multiRand(n));
+
+// Ask user to input the n to generate n random numbers
