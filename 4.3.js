@@ -6,7 +6,7 @@ let n = rand10();
 
 function multiRand(n) {
   const mrand = [];
-  for (var i = 0; i < n; i++) {
+  for (let i = 0; i < n; i++) {
     mrand.push(Math.floor(Math.random() * 10) + 1);
   }
   return mrand;
