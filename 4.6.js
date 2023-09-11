@@ -5,7 +5,8 @@ function factorial(x) {
     return x * factorial(x - 1);
   }
 }
-// Function to calcul the factorial of a number given x, is x = 0 it returns to 1, if x is greater than 0, it calculate the factorial
+// Function to calcul the factorial of a number given x, is x = 0 it returns to 1,
+// if x is greater than 0, it calculate the factorial
 
 let x;
 do {
