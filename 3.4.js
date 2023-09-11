@@ -1,6 +1,6 @@
 let numInput = prompt("Enter a list a numbers separated by a space :");
 var numbers = numInput.split(" ");
-let min, max; // declaring the variable here so i can acess it outside the function
+let min, max; // declaring the variable here so i can acess it outside the
 
 // Function to find min and max element within the numbers array
 function findMinMax() {
