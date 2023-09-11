@@ -1,3 +1,11 @@
+function pickLearner(inputAr, n) {
+  for (let i = inputAr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [inputAr[i], inputAr[j]] = [inputAr[j], inputAr[i]]; // Switching index with random j generated below
+  }
+  return inputAr.slice(0, n);
+}
+
 let inputAr = [
   "Alexandre VDW",
   "Alexandre Vens",
@@ -27,9 +35,7 @@ let inputAr = [
   "Virgine Dourson",
 ];
 
-let n = Math.floor(Math.random() * inputAr.length) + 1;
-
-function pickLearner(inputAr, n) {
-  console.log(inputAr[Math.floor(Math.random() * inputAr.length)]);
-}
-pickLearner(inputAr, n);
+let n = Math.floor(Math.random() * inputAr.length) + 1; // Randomize a number between 1 and the max number of element in the InputAr Array
+console.log("Here are the " + n + " learners selected :");
+const randomLearners = pickLearner(inputAr, n);
+console.log(randomLearners);
