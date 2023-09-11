@@ -1,27 +1,21 @@
-let numbers = [1, 2, 3, 4, 5];
+var numInput = prompt("Enter a series of numbers with spaces in between each:");
+var numbers = numInput.split(" ");
 let sum = 0;
 
-// Sum function + call
-
+// Sum function
 function mysum() {
   for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
+    sum += Number(numbers[i]);
   }
-  console.log(sum);
+  return sum;
 }
+
 mysum();
 
 // Average
-
 function myavg() {
   let avg = sum / numbers.length;
-  console.log(avg);
+  return avg;
 }
-myavg();
 
-sum = 0;
-avg = 0;
-numbers = [100, 101, 102];
-
-mysum();
-myavg();
+alert("The average of your numbers is " + myavg());
