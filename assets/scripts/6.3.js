@@ -83,3 +83,5 @@ for (let i = 0; i < rectangles.length; i++) {
     }
   }
 }
+/* At first it shows me the collision between Objects objects only so I add a "toString" method in my rectangle and call it in the last console.log to 
+display the string content. With the addition of the toStrings method, the final console.log display all the informations of the 2 collided rectangles*/
