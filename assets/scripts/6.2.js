@@ -41,7 +41,7 @@ class rectangle {
       y: otherRectangle.topLeftYpos + otherRectangle.width,
     };
     // Same method to find the coordonates of the 4 courner of the other rectangle
-    // Putting the if for the otherrectangle to collide first one
+    // Putting the if for the other rectangle to collide first one
     if (
       topLeftcorner.x < otherBottomright.x &&
       topRightcorner.x > otherTopleft.x &&

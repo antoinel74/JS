@@ -68,7 +68,7 @@ function randomizeRectangle() {
 
 // Pushing 1000times the function to generate 1000 rectangles
 const rectangles = [];
-for (let i = 0; i < 1000; i++) {
+for (let i = 0; i < 100; i++) {
   rectangles.push(randomizeRectangle());
 }
 
@@ -76,10 +76,7 @@ for (let i = 0; i < 1000; i++) {
 for (let i = 0; i < rectangles.length; i++) {
   for (let j = i + 1; j < rectangles.length; j++) {
     if (rectangles[i].collides(rectangles[j])) {
-      console.log("Collision detected: ");
-      console.log(
-        `There is a collision between ${rectangles[i]} and ${rectangles[j]}`
-      );
+      console.log(`Collision between ${rectangles[i]} and ${rectangles[j]}`);
     }
   }
 }
