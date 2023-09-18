@@ -14,7 +14,7 @@ class circle {
   }
 }
 
-// This class create a circle usingow  a constructor to define his position and his size
+// This class create a circle using a constructor to define his position and his size
 // Add a method to move the position of the circle by adding the offset value to the x and y
 // Return a calcul of the function using the surface formula (radius*radius) * pi
 
