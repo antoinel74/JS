@@ -24,4 +24,4 @@ Learning the JS objects and the basic of JSON format
 
 ## 6. Class
 
-3 **not-so easy** exercices on JS class
+Exercices on JS class
